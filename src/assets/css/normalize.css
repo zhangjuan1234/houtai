@@ -1,0 +1,56 @@
+/***所有页面共用的标准化样式***/
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+html {
+	/* 保证在HTML5标准模式下，html元素的高度为铺满屏幕 */
+	height: 100%;
+	font-size: 14px;
+}
+body {
+	margin: 0;
+	font-family: '黑体', 'Arial';
+	background-color: #efefef;
+	color: #333;
+	height: 100%;
+}
+h1, h2, h3, h4, h5, h6, p, ul, ol {
+	margin: 0;
+}
+ul, ol, dl {
+	padding: 0;
+	/* 清除每个列表项前的提示符 */
+	list-style: none;
+}
+a {
+	/* 超链接不会继承body的字体颜色，必须手工指定 */
+	color: #333;
+	text-decoration: none;
+}
+input, button {
+	/* 输入元素和按钮在获得焦点时有外轮廓线，需要清除 */
+	outline: none;
+}
+a > img {
+	/* 老IE下，超链接中的图片会自带一圈蓝色边框 */
+	border: none;
+}
+
+/****定义当前项目常用的辅助类****/
+/* 定宽容器 */
+.container {
+	/* 定宽，居中，一般就是内容的最外层容器 */
+	width: 1200px;
+	margin: 0  auto;
+}
+/* 变宽容器 */
+.container-fluid {
+	width: 100%;
+}
+
+div {
+	/* 仅供测试使用 */
+	/* border: 1px solid #000;   */
+}
